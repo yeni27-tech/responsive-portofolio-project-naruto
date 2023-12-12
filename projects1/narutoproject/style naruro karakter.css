@@ -1,0 +1,152 @@
+*,html,body {
+    padding: 0;
+    margin:0;
+}
+
+.all-character {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar {
+    background-image:url(maxresdefaulttttt2.JPG);
+    filter: brightness(1.1) contrast(1.0);
+    height: 160px;
+}
+
+.nav_logo {
+    margin-right: 50px;
+    padding-left: 690px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 180px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.navigation :hover {
+    color: orange;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+}
+
+.navigation li> a{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.home {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.active {
+    background: #f8f8c6;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: orange !important;
+    border-radius: 100px;
+    border: 2px  solid orangered;
+}
+
+.text-judul h1 {
+    padding-top: 10px;
+    color: orangered;
+    box-shadow: 10px grey !important;
+}
+
+.text-judul hr{
+        background-color: black;
+        border-radius: 5px;
+        margin-top: 3px;
+    }
+
+.all-character {
+    background-image:radial-gradient( circle at top left #FBE8A6,rgb(241, 199, 109)55, 255, 255);
+}
+
+/*baris pertama*/
+.baris_1 {
+    display: flex;
+    padding-top: 50px;
+    position: center;
+}
+.text1 {
+    margin-left: 55px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.text2 {
+    margin-left: 150px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*baris ke 2*/
+.deskripsi3 {
+    margin-left: 10px;  
+}
+
+.text3 {
+    text-align: right;
+    margin-left: 100px;
+}
+
+.text4 {
+    text-align: right;
+    padding-right: 10px;
+    margin-left: 50px;
+}
+
+.deskripsi4 {
+    margin-right: 100px;
+
+}
+
+.baris_1 {
+    display: flex;
+}
+
+.baris_2 {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    position: center;
+}
+
+/*baris ke 3*/
+
+.baris_3 {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    position: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+.text5 {
+    margin-left: 268px;
+    text-align: right;
+    padding-right:10px ;
+}

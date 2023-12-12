@@ -1,0 +1,110 @@
+*,html,body {
+    padding: 0;
+    margin:0;
+}
+
+.navbar {
+    background-image:url(maxresdefaulttttt2.JPG);
+    filter: brightness(1.1) contrast(1.0);
+    height: 160px;
+}
+
+.nav_logo {
+    margin-right: 50px;
+    padding-left: 690px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 180px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.navigation :hover {
+    color: orange;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+}
+
+.navigation li> a{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white
+}
+
+.home {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.active {
+    background-color: #f8f8c6;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: orange !important;
+    border-radius: 100px;
+    border: 2px  solid orangered;
+}
+
+.deskripsi {
+    display: flex;
+}
+
+.text {
+    margin-left: 117px;
+    margin-top: 30px;
+    font-size: 15px;
+    position: absolute;
+}
+
+.gambar_desct {
+    margin-left: 943px;
+    margin-top: 39px;
+    position: absolute;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.judul_genre {
+    background-color: sandybrown;
+    margin-left: 943px;
+    text-transform: capitalize;
+    margin-top: 340px;
+    padding-left: 80px;
+    padding-right: 90px;
+    position: absolute;
+    color: white;
+}
+
+#genre {
+    background-color: rgb(253, 251, 245);
+    margin-left: 943px;
+    text-transform: capitalize;
+    margin-top: 357px;
+    padding-left: 24px;
+    padding-right: 3px;
+    position: absolute;
+}
+.tabel1 {
+    margin-left: 942px;
+    text-transform: capitalize;
+    margin-top: 390px;
+    padding-left: 0px;
+    padding-right: 35px;
+    position: absolute;
+}
+

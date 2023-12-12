@@ -1,0 +1,115 @@
+.background {
+    background-color: black;
+    padding-left: 200px;
+}
+
+.contackus {
+    font-size: 40px;
+    color: white;
+    padding-left: 3rem;
+}
+
+.display {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.address {
+    padding-left: 3rem;
+    color: white;
+}
+
+.address> h2 {
+    padding-bottom: 30px;
+}
+
+.usefullinks {
+    padding-top: 35px;
+}
+
+.usefullinks> ul{
+    list-style: none;
+}
+
+.usefullinks ul> li::before {
+    content: "\2022";
+    color: rgb(248, 41, 22);
+    font-weight: bold;
+    width: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.usefullinks> h2 {
+   margin-left: 1rem;
+}
+
+.overview {
+    padding-bottom: 5px;
+}
+
+.overview> ul{
+    list-style: none;
+}
+
+.overview ul> li::before {
+    content: "\2022";
+    color:rgb(248, 41, 22);
+    font-weight: bold;
+    width: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.overview> h2 {
+    margin-left: 2rem;
+}
+
+.imgoverview {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.instagram {
+    margin-bottom: 10px;
+}
+
+.imgoverview {
+    margin: 10px;
+    margin-left: 2rem;
+}
+
+.imginstagram {
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.instagram> h2 {
+    padding-left: 3rem;
+}
+
+.imginstagram1 {
+    padding-left: 2rem;
+}
+
+.imginstagram11 {
+    padding-left: 10px;
+}
+.imginstagram2 {
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.imginstagram22 {
+    padding-left: 2rem;
+}
+
+.imginstagram222 {
+    padding-left: 10px;
+}
+
+.imginstagramall {
+    margin: 20pxs;
+}

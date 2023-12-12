@@ -1,0 +1,152 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.fContainer {
+    display:flex ;
+    justify-content: center;
+    width: 100%;
+    height: 100hv;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20;
+    width: 1000px;
+    height: 100px;
+    background-color:black;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+    
+}
+.logooo {
+   padding-left: 15px;
+   border-collapse: 50px;
+   background-color: black;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 135px;
+    background-color:black;
+}
+
+.navigation>li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a:hover {
+color: rgb(143, 84, 39);
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+}
+
+.navigation > li > a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.namelogo{
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Brush Script MT';
+    padding-top: 20px;
+}
+
+.cake {
+    padding-left: 15px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.imglogo {
+    display: flex;
+}
+   
+
+.oren {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(rgb(143, 87, 18),rgb(151, 99, 20),rgb(160, 107, 22),rgb(156, 135, 82));
+  margin-right:50px;
+  color: white;
+  margin-left: 275px;
+  margin-top: 35px;
+  position: absolute;
+}
+
+.oren >p {
+    padding-left: 85px;
+}
+
+.judul{
+    margin-left: 650px;
+    font-size: 60;
+    margin-top: 50px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    text-shadow: 4px 4px 4px #fc0303;
+    text-transform: capitalize;
+    font-family: 'comic sans MS',monospace;
+    text-align: center;
+}
+
+.textisi{
+    font-size: 16px;
+    color: rgb(159, 28, 28);
+    margin-left:350px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.button{
+    text-transform: capitalize;
+    margin-left: 720px;
+    margin-top: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(143, 87, 18);
+    width: 150px;
+    height: auto;
+    align-items: center;
+    border: 100px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.button ul> li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.button ul> li > a {
+color: white;
+font-size: 18px;
+text-decoration: none;
+text-transform: capitalize;
+align-items: center;
+}
+
+.button> ul> li> a:hover{
+    color:black;
+}

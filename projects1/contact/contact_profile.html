@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style_contact.css"/>
+    <link rel="icon" href="../image/logo.png">
+</head>
+<body>
+<div class="all">
+    <small>Enter message (optional) and click button "Send"</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h3>Send a message as a correction</h3>
+      <p>
+        <textarea placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" placeholder="Your email" >
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+
+<p class="result-message centered">Thank you for your message</p>
+
+<script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+</script>
+</div>
+
+<div class="back">
+  <a href="../index.html">back</a>
+</div>
+
+</body>
+</html>

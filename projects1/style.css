@@ -1,0 +1,1375 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+
+  canvas{
+    position: absolute;
+    width: 1260px;
+    justify-content: center; 
+    margin-right: 100px;
+  }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right bottom, #164863,#427D9D,#9BBEC8);
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.all {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*navbar*/
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background: white;
+     background-color: #DDF2FD;
+      z-index: 4;
+}
+
+.logo {
+    font-family: 'Arial narrow';
+    margin-left: 150px;
+}
+
+.navbar {
+    margin-left: 500px;
+}
+
+.nav {
+    display: flex;
+    margin-right: 50px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+.nav > li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav >li> a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    color: #164863;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav a:hover {
+    color: blue !important;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid blue;
+}
+
+
+/*drop down*/
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 20px;
+  transition: all .3s ease;
+  margin-right: 100px;
+}
+
+.nav-link:hover {
+  color: #3BBEC4;
+}
+
+.nav-links li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links ul {
+  display: none;
+  width: 100%;
+  top: 25px;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.nav-links:hover ul {
+  display: block;
+}
+
+/*perngenalan dan pp*/
+
+.pengenalan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.wraper > h1 {
+    font-weight: bolder;
+    font-family:cursive;
+    font-size: 47px;
+}
+
+.wraper {
+    font-size: 19px;
+    margin-top: 150px;
+    color: white;
+    position: sticky;
+}
+
+.sosmed {
+   width: 150px;
+   align-items: center;
+   position: center;
+   justify-content: center;
+   height: 50px;
+   display: flex;
+   background-color: white;
+   border-radius: 60px;
+   padding-left: 7px;
+   z-index:unset;
+   position: sticky;
+}
+
+.sosmed>div:nth-child(1):hover {
+    opacity: 0.5;
+    transition: all 0.4s;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.sosmed>div:nth-child(2):hover {
+    opacity: 0.5;
+     transition: all 0.4s;
+     margin-bottom: 10px;
+}
+
+.sosmed>div:nth-child(3):hover {
+    opacity: 0.5;
+     transition: all 0.4s;
+     margin-bottom: 10px;
+}
+
+
+.profil{
+    margin-left: 350px;
+    margin-top: 187px;
+    position:static;
+}
+
+.profil> img {
+    border-radius:80px 170px 80px;
+    image-orientation: 100%;
+}
+
+/*kumpulan task*/
+
+.textmytask {
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+}
+
+.alltask img:hover {
+    opacity: 0.7;
+    scale: 85%;
+    transition: all 0.4s ease;
+}
+
+
+/*baris ke 1*/
+.task1 {
+    display: flex;
+    align-items: center;
+}
+
+.web1 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+
+.web1 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.web1 > img {
+    margin-top: 10px;
+}
+
+.web2 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.web2 > img {
+    margin-top: 10px;
+}
+
+.web2 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*baris ke 2*/
+.task2 {
+    display: flex;
+    align-items: center;
+}
+
+.web3 {
+    background-image: linear-gradient(to right bottom, #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.web3 > img {
+    margin-top: 10px;
+}
+
+.web3 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.web4 {
+    background-image: linear-gradient(to right bottom, #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.web4 > img {
+    margin-top: 10px;
+}
+
+.web4 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*baris ke 3*/
+
+.task3 {
+    display: flex;
+    align-items: center;
+}
+
+
+.web5 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.web5 > img {
+    margin-top: 10px;
+}
+
+.web5 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.web6 {
+    background-image: linear-gradient(to right bottom, #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.web6 > img {
+    margin-top: 10px;
+}
+
+.web6 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/*project*/
+
+.textmyproject {
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+    
+}
+
+
+.row1 {
+    display: flex;
+    align-items: center;
+}
+.row1 > div > a {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right bottom, #2D9596 ,#e99af7);
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.row1 >div > a:hover {
+    color: blue;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid blue;
+    transition:  all 0.5s ease-in-out;
+}
+
+.naruto {
+    background-image: linear-gradient(to right bottom,  #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: 500px;
+    height: 400px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: center;
+    margin-left: 230px;
+}
+
+.naruto >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.naruto > img {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.textcontact> h1{
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 35px;
+}
+
+
+/*contct*/
+.contact {
+    margin-right: 150px;
+}
+
+.contact .container {
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+.contact .content .image-box {
+  max-width: 60%;
+  margin-left: 4rem;
+}
+.contact .content .image-box img {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+.contact .content form {
+  width: 45%;
+  margin-right: 3.5rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea {
+  width: 200px;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.field input::placeholder,
+.message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+.field input:focus,
+.message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+  color: rgb(115, 3, 167);
+}
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .message i {
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+form .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+.button-area button:hover {
+  background: #421cecf5;
+}
+.button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.button-area button i {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i {
+  left: 8px;
+}
+
+#contact >h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid white;
+    color: #f2f6f8;
+    margin-left: 0px;
+    width: max-content;
+    margin-top: 100px;
+}
+
+.contact>a>img {
+    margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: white; text-decoration: none;
+    background-image: linear-gradient(to right bottom, #164863,#427D9D);
+    text-emphasis: center;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: 350px;
+    border: 1px solid white;
+
+}
+
+.contact a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0.5;
+    transition:  all 0.5s ease-in-out;
+}
+
+.contact>img {
+    position: absolute;
+    width: 50px;
+    margin-right:90px;
+    margin-top: 35px;
+}
+
+.allc {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right bottom,#427D9D,#DDF2FD );
+}
+
+  .tlp> div {
+             display: flex;
+            align-items: center;
+            }
+            .tlp> div> .nomor {
+            margin-top: 50px;
+            }
+
+
+center>p
+        {
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #164863;
+            color: wheat;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        .tlp .awal {
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        .tlp .akhir {
+            margin-top: 7px;
+            margin-left: 100px;
+        }
+
+        .tlp-s {
+            display: flex;
+        }
+
+
+    center> a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+
+    }
+
+    center> a>p:hover {
+    scale: 0.8;
+    transition: all 0.4;
+    }
+
+ .sosmed2 {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    }
+
+.sosmed2 img:hover  {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background:linear-gradient(#164863,#427D9D,#9BBEC8);
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+canvas{
+   height: max-content;
+}
+
+h1 {
+    color: white;
+}
+
+.all {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*navbar*/
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+     height: 7%;
+     color: transparent;
+}
+
+.logo {
+    font-family: 'Arial narrow';
+    margin-left: 150px;
+    width: 50%;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.navbar {
+    margin-left:0px;
+}
+
+.nav {
+    display: flex;
+    margin-right: 50px;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 50px;
+    margin-bottom: 300px;
+}
+
+.nav a {
+    font-size:40px;
+}
+
+.nav > li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav >li> a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav a:hover {
+    color: blue !important;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid blue;
+}
+
+/*drop down*/
+span img {
+    margin-left: 150px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 20px;
+  transition: all .3s ease;
+  margin-right: 100px;
+  padding-right: 200px;
+}
+
+.nav-link:hover {
+  color: #164863;
+  
+}
+
+.nav-links li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+.nav-links a {
+    font-size: 50px;
+}
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links ul {
+  display: none;
+  width: 150%;
+  top: 25px;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  position: absolute;
+  border-radius: 30px;
+  width: 250px;
+}
+
+
+.nav-links:hover ul {
+  display: block;
+}
+
+/*perngenalan dan pp*/
+
+.pengenalan {
+    flex-direction: column;
+}
+
+.wraper > h1 {
+    font-weight: bolder;
+    font-family:cursive;
+    font-size: 75px;
+    width: max-content;
+}
+
+.wraper {
+    font-size: 50px;
+    margin-top: 250px;
+    inline-size: none;
+    margin-left: 500px;
+}
+
+.sosmed {
+   width: 200px;
+   align-items: center;
+   position: center;
+   justify-content: center;
+   height: 50px;
+   display: flex;
+   background-color:white;
+   border-radius: 70px;
+   padding-left: 7px;
+   z-index:unset;
+   
+}
+
+
+
+.sosmed>div:nth-child(1):hover {
+    opacity: 0.5;
+    transition: all 0.4s;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.sosmed>div:nth-child(2):hover {
+    opacity: 0.5;
+     transition: all 0.4s;
+     margin-bottom: 10px;
+}
+
+.sosmed>div:nth-child(3):hover {
+    opacity: 0.5;
+     transition: all 0.4s;
+     margin-bottom: 10px;
+}
+
+
+.profil{
+    margin-left: 350px;
+    margin-top: 187px;
+    position:static;
+}
+
+.profil> img {
+    border-radius:200px 400px 200px;
+    image-orientation: 100%;
+    width: 900px;
+    margin-left: 350px;
+}
+
+/*kumpulan task*/
+
+.textmytask {
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 50px;
+    width: max-content;
+}
+
+.alltask img:hover {
+    opacity: 0.7;
+    scale: 85%;
+    transition: all 0.4s ease;
+}
+
+
+/*baris ke 1*/
+
+.task1 {
+     flex-direction: column;
+     margin-left: 500px;
+     justify-content: center;
+}
+
+.web1 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 600px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+
+.web1 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.web1 > img {
+    margin-top: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.web1, .web2 img {
+    position: relative;
+}
+
+.web2 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 500px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 100px;
+   
+}
+
+.web2 > img {
+    margin-top: 10px;
+}
+
+.web2 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+/*baris ke 2*/
+.task2 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.web3 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 600px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.web3 > img {
+    margin-top: 10px;
+}
+
+.web3 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.web4 {
+    background-image: linear-gradient(to right bottom, #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 600px;
+    border-radius:50px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+margin-right: 100px;
+}
+
+.web4 > img {
+    margin-top: 10px;
+}
+
+.web4 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+/*baris ke 3*/
+
+.task3 {
+     flex-direction: column;
+    align-items: center;
+    margin-left: 500px;
+}
+
+
+.web5 {
+    background-image: linear-gradient(to right bottom,#FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 600px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.web5 > img {
+    margin-top: 10px;
+}
+
+.web5 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.web6 {
+    background-image: linear-gradient(to right bottom, #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 500px;
+    border-radius:50px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 100px;
+
+}
+
+.web6 > img {
+    margin-top: 10px;
+}
+
+.web6 >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+
+
+/*project*/
+
+.textmyproject {
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 50px;
+    width: max-content;
+    
+}
+
+
+.row1 {
+
+    align-items: center;
+}
+.row1 > div > a {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right bottom, #2D9596 ,#e99af7);
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 45px;
+}
+.row1 >div > a:hover {
+    color: blue;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid blue;
+    transition:  all 0.5s ease-in-out;
+}
+
+.naruto {
+    background-image: linear-gradient(to right bottom,  #FFEBD8 ,#DDF2FD) ;
+    border: 2px solid #eaeaea;
+    margin-top: 50px; 
+    width: max-content;
+    height: 550px;
+    border-radius:50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: center;
+    margin-left: 100px;
+}
+
+.naruto >p {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width: max-content;
+}
+
+.naruto > img {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+/*contact*/
+
+.contact {
+    margin-right: 150px;
+}
+
+.contact .container {
+  width: max-content;
+  background: white;
+  border-radius: none;
+  box-shadow:none;
+}
+.contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+.contact .content .image-box {
+  max-width: 60%;
+  margin-left: 0rem;
+}
+.contact .content .image-box img {
+  width: none;
+  height: none;
+  z-index: 1;
+}
+.contact .content form {
+  width: max-content;
+  margin-right: 4rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea {
+  width: 240px;
+  height: 130%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.field input::placeholder,
+.message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+.field input:focus,
+.message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+  color: rgb(115, 3, 167);
+}
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .message i {
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+form .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+.button-area button:hover {
+  background: #421cecf5;
+}
+.button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.button-area button i {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i {
+  left: 8px;
+}
+
+
+.textcontact> h1{
+    margin-top: 150px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 50px;
+    width: max-content;
+}
+
+.contact>a>img {
+    margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: white; text-decoration: none;
+    background-image: linear-gradient(to right bottom, #164863,#427D9D);
+    text-emphasis: center;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: 350px;
+    border: 1px solid white;
+    width: 150px;
+
+}
+
+.contact a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0.5;
+    transition:  all 0.5s ease-in-out;
+}
+
+.contact>img {
+    position: absolute;
+    width: 50px;
+    margin-right:90px;
+    margin-top: 35px;
+}
+
+.allc {
+
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:none;
+}
+
+center>p
+        {
+            margin-top: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #164863;
+            color: wheat;
+            opacity: 0.7;
+            width: 400px;
+            text-align: center;
+            margin-left: 500px;
+            text-align: center;
+        }
+
+        .tlp .awal {
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        .tlp .akhir {
+            margin-top: 7px;
+            margin-left: 100px;
+        }
+
+        .tlp img {
+            width: 50px;
+        }
+
+        .tlp-s {
+            display: flex;
+        }
+
+        .tlp {
+            font-size: 25px;
+            opacity: 0.8;
+
+        }
+
+
+    center a p {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 350px;
+    position: absolute;
+    width: max-content;
+    }
+
+    center> a>p:hover {
+    scale: 0.8;
+    transition: all 0.4;
+    }
+
+ .sosmed2 {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    }
+
+.sosmed2 div img {
+    width: 70px;
+}
+  }

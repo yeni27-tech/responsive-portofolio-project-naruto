@@ -1,0 +1,296 @@
+*,html,body {
+    padding: 0;
+    margin:0;
+}
+
+/*nav*/
+.navbar {
+    background-image:url(maxresdefaulttttt2.JPG);
+    filter: brightness(1.1) contrast(1.0);
+    height: 160px;
+}
+
+.nav_logo {
+    margin-right: 50px;
+    padding-left: 690px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 180px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.navigation :hover {
+    color: orange;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+}
+
+.navigation li> a{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white
+}
+
+.home {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.active {
+    background-color: #f8f8c6;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: orange !important;
+    border-radius: 100px;
+    border: 2px  solid orangered;
+}
+
+/*vidio*/
+
+.tombol-back{
+    list-style-type: none;
+    text-align: none;
+    background-image:linear-gradient(rgb(178,34,33),rgb(230, 46, 46),rgb(240, 53, 53));
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    height: 20px;
+    width: 130px;
+    align-items: center;
+    position: absolute;
+}
+
+.tombol-back li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    margin-left: 1068px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+/*body*/
+
+.all-movie {
+background-image:radial-gradient( circle at top left, rgb(255, 98, 0),rgb(255, 98, 0),rgb(253, 193, 13));
+}
+
+.text-judul hr{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.text-judul  {
+    padding-top: 10px;
+    color: white;
+}
+
+.movie-baris-1 {
+display: flex;
+}
+
+.movie-baris-1 {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.movie1 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 80px;
+    box-shadow: 5px 0px 10px #333;
+
+}
+
+/*judul movie baris 1*/
+
+.movie1 h6{
+    color: white;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 230px;
+}
+
+.movie2 h6{
+    color: white;
+    position: absolute;
+    padding-left: 78px;
+    padding-top: 230px;
+}
+
+.movie3 h6{
+    color: white;
+    position: absolute;
+    padding-left: 80px;
+    padding-top: 230px;
+}
+
+.movie4 h6{
+    color: white;
+    position: absolute;
+    padding-left: 57px;
+    padding-top: 230px;
+}
+
+.movie5 h6{
+    color: white;
+    position: absolute;
+    padding-left: 55px;
+    padding-top: 230px;
+}
+
+/*judul movie baris 2*/
+
+.movie6 h6{
+    color: white;
+    position: absolute;
+    padding-left: 85px;
+    padding-top: 230px;
+}
+
+.movie7 h6{
+    color: white;
+    position: absolute;
+    padding-left: 55px;
+    padding-top: 230px;
+}
+
+.movie8 h6{
+    color: white;
+    position: absolute;
+    padding-left: 55px;
+    padding-top: 230px;
+}
+
+.movie9 h6{
+    color: white;
+    position: absolute;
+    padding-left: 87px;
+    padding-top: 230px;
+}
+
+.movie10 h6{
+    color: white;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 230px;
+}
+
+.movie1 p{
+    color: white;
+    font-size: 10;
+    position: absolute;
+    padding-left:220px;
+    padding-top: 255px;
+}
+
+.movie2 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie3 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie4 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie5 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie-baris-2 {
+    display: flex;
+    }
+    
+.movie-baris-2 {
+        margin-top: 50px;
+        align-items: center;
+    }
+.movie6 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 80px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie7 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie8 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie9 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie10 img  {
+    box-shadow: inset 5px 15px 5px rgb(0,0,0,0.4);
+    margin-left: 50px;
+    box-shadow: 5px 0px 10px #333;
+}
+
+.movie-baris-1 >div >a:hover {
+    opacity: 0.8;
+    transition: all 0.4s ease-in;
+}
+
+.movie-baris-2 >div >a:hover {
+    opacity: 0.8; 
+    transition: all 0.4s ease-in;
+}
+
+
+/*cuplikan*/
+#cuplikan_movie{
+    color: white;
+    text-align: center;
+}
+
+#cuplikan_movie  hr{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.tombol-back a:hover {
+    color: black;
+    transition: color .5s ease-in;
+}

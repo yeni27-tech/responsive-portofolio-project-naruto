@@ -1,0 +1,152 @@
+.hitam {
+    background-color: black;
+    height: 100px;
+    width: auto;
+}
+
+.hitam>p {
+color: goldenrod;
+font-family: 'Brush Script MT';
+text-align: center;
+font-size: 70px;
+}
+
+.bg_gambar {
+    align-items: center;
+    margin-left: 430px;
+    margin-top: 50px;
+    background-image:radial-gradient(black,black);
+    height: 300px;
+    width: 500px;
+}
+
+.display {
+    display: flex;
+}
+
+.menu-malasngoding li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-malasngoding li a:hover{
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 40px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+.isi-dropdown a:hover {
+    color: green;
+}
+
+.isi-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #f9f9f9;
+}
+
+.isi-dropdown a {
+    color: #3c3c3c !important;
+}
+
+.isi-dropdown a:hover {
+    color: green !important;
+    background: #f3f3f3 !important;
+}
+
+.isi-dropdown>ul>li>a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.isi-dropdown>li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu-malasngoding{
+	background: rgba(0, 0, 0, 0.557);
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    border-radius: 40px;
+}
+
+.judul{
+    font-size:80px;
+    margin-left: 200px;
+    position: absolute;
+   font-family:initial;
+   color:#3c3c3c
+}
+
+.emas {
+    display: flex;
+    color: rgb(167, 143, 9);
+    font-weight: bold;
+    position: absolute;
+    margin-bottom: 30px;
+}
+
+.text1 {
+    font-size:30px;
+    padding-left: 120px;
+    margin-bottom: 100px;
+    width: 300px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-family:'Brush Script MT';
+}
+
+.isi1 {
+    background-color: rgba(0, 0, 0, 0.751);
+    color: #f9f9f9;
+    height:100px;
+    width: 800px;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.isi1 {
+    padding-top: 20px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    font-family:  'comic sans MS',monospace;
+    font-size: 13px;
+}
+
+.isi2 {
+    background-color: orange;
+    color: white;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    height: 60PX;
+    margin-top: 100px;
+    margin-left: 800px;
+}
+
+.gambarr {
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 45px;
+}
+
+.gambarrr {
+    position: absolute;
+    margin-left: 1100px;
+}

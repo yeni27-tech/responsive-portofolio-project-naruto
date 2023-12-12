@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profilio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="./image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--cursor-->
+   <canvas></canvas>
+    <script>
+var canvas = document.querySelector('canvas');
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+c = canvas.getContext('2d');
+
+window.addEventListener('resize', function () {
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    initCanvas();
+});
+
+var mouse = {
+    x: undefined,
+    y: undefined };
+
+window.addEventListener('mousemove',
+function (event) {
+    mouse.x = event.x;
+    mouse.y = event.y;
+    drawCircles();
+});
+
+window.addEventListener("touchmove",
+function (event) {
+    let touch = event.touches[0];
+    mouse.x = touch.clientX;
+    mouse.y = touch.clientY;
+    drawCircles();
+});
+
+
+function Circle(x, y, radius, vx, vy, rgb, opacity, birth, life) {
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+    this.minRadius = radius;
+    this.vx = vx;
+    this.vy = vy;
+    this.birth = birth;
+    this.life = life;
+    this.opacity = opacity;
+
+    this.draw = function () {
+        c.beginPath();
+        c.arc(this.x, this.y, this.radius, Math.PI * 2, false);
+        c.fillStyle = 'rgba(' + rgb + ',' + this.opacity + ')';
+        c.fill();
+    };
+
+    this.update = function () {
+        if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            this.vx = -this.vx;
+        }
+
+        if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+            this.vy = -this.vy;
+        }
+
+        this.x += this.vx;
+        this.y += this.vy;
+
+        this.opacity = 1 - (frame - this.birth) * 1 / this.life;
+
+        if (frame > this.birth + this.life) {
+            for (let i = 0; i < circleArray.length; i++) {
+                if (this.birth == circleArray[i].birth && this.life == circleArray[i].life) {
+                    circleArray.splice(i, 1);
+                    break;
+                }
+            }
+        } else {
+            this.draw();
+        }
+    };
+
+}
+
+var circleArray = [];
+
+function initCanvas() {
+    circleArray = [];
+}
+
+var colorArray = [112,
+'255, 251, 115',
+'255, 230, 27',
+'255, 230, 27',
+'247, 247, 247'
+];
+
+
+function drawCircles() {
+    for (let i = 0; i < 6; i++) {
+        let radius = Math.floor(Math.random() * 4) + 2;
+        let vx = Math.random() * 2 - 1;
+        let vy = Math.random() * 2 - 1;
+        let spawnFrame = frame;
+        let rgb = colorArray[Math.floor(Math.random() * colorArray.length)];
+        let life = 1000;
+        circleArray.push(new Circle(mouse.x, mouse.y, radius, vx, vy, rgb, 1, spawnFrame, life));
+
+    }
+}
+
+var frame = 0;
+function animate() {
+    requestAnimationFrame(animate);
+    frame += 5;
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    for (let i = 0; i < circleArray.length; i++) {
+        circleArray[i].update();
+    }
+
+}
+
+initCanvas();
+animate();
+
+// This is just for demo purposes :
+for (let i = 1; i < 110; i++) {
+    (function (index) {
+        setTimeout(function () {
+            mouse.x = 150+ i * 10;
+            mouse.y = 150;
+            drawCircles();
+        }, i * 10);
+    })(i);
+}
+</script>
+
+
+
+<!--navbar-->
+<nav>
+        <div class="logo">
+            <img src="./image/logo.png" width="100px">
+        </div>
+        <div class="navbar">
+            <ul class="nav">
+                <li><a href="#pengenalan">home</a></li>
+                <li><a href="#task">task</label></a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-links">
+          <span class="nav-link" style="cursor: pointer;">
+           <img src="./image/Screenshot_2023-12-10_213652-removebg-preview.png" width="67px">
+          </span>
+          <ul>
+            <li>
+              <a href="#pengenalan" class="nav-link">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#task" class="nav-link">
+                Task
+              </a>
+            </li>
+            <li>
+              <a href="#project" class="nav-link">
+                project
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">
+                contact
+              </a>
+            </li>
+          </ul>
+        </div>
+</nav>
+
+
+<div class="all">
+
+    <section id="pengenalan">
+<div class="pengenalan">
+        <div class="wraper">
+            <span>Hello<img src="./image/hello.gif" width="50px">, iam</span><br>
+            <h1>Yeni faturohmah</h1><br>
+            <p>I'm a website creator</p>
+            <br>
+
+
+
+
+            <div class="sosmed">         
+                <div>
+                <a href="https://instagram.com/shioya.yy?igshid=NzZlODBkYWE4Ng==">
+                    <img src="./image/Screenshot 2023-11-12 190659.png"  style="width:40px"></a> 
+                    </div>            
+                    <div>    
+                <a href="https://www.facebook.com/profile.php?id=100040692699916&mibextid=2JQ9oc">
+                    <img src="./image/Screenshot 2023-11-12 190627.png"  style="width:40px"></a>
+                    </div>
+                    <div>
+                <a href="https://www.tiktok.com/@yeyenskapecellele?_t=8hIYDInddEg&_r=1">
+                    <img src="./image/Screenshot 2023-11-12 190716.png"  style="width:40px"></a>
+                    </div>   
+            </div>
+        </div>
+
+
+
+        <div class="profil">
+            <img src="./image/pp.gif" width="350px">
+        </div>
+    </div>
+    </id>
+
+
+<!--task-->
+    <section id="task">
+        <div class="textmytask">
+            <h1 class="animate">📖 layout tasks for the firs 3 months</h1>
+        <hr>
+             </div> 
+
+<div class="alltask">
+        <div class="task1">
+<div class="web1">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+        molestias accusamus, quam incidunt, eius expedita culpa<br>
+        veritatis alias qui doloremque ipsum aperiam?.
+    </p>
+    <a href="./task/web 2.html"><img src="./image/web 2.png" width="350px"/></a><br>
+    <a href="./task/web 2.html"><img src="./image/web-2-contact.png" width="350px"/></a>
+</div>
+<div class="web2">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+        molestias accusamus, quam incidunt, eius expedita culpa<br>
+        veritatis alias qui doloremque ipsum aperiam?.
+    </p>
+    <a href="./task/web 3.html"><img src="./image/web 3.png" width="350px"></a><br>
+</div>
+        </div>
+
+
+        <div class="task2">
+            <div class="web3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+                    molestias accusamus, quam incidunt, eius expedita culpa<br>
+                    veritatis alias qui doloremque ipsum aperiam?.
+                </p>
+                <a href="./task/web 4.html"><img src="./image/web 4.png" width="350px"></a><br>
+                <a href="./task/web 5.html"><img src="./image/web 55.png" width="350px"></a>
+            </div>
+            <div class="web4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+                    molestias accusamus, quam incidunt, eius expedita culpa<br>
+                    veritatis alias qui doloremque ipsum aperiam?.
+                </p>
+                <a href="./task/web 6.html"><img src="./image/web 5.png" width="350px"></a><br>
+                <a href="./task/web 6.html"><img src="./image/kedua web6.png" width="350px"></a>
+            </div>
+        </div>
+
+
+        <div class="task3">
+                <div class="web5">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+                        molestias accusamus, quam incidunt, eius expedita culpa<br>
+                        veritatis alias qui doloremque ipsum aperiam?.
+                    </p>
+                    <a href="./task/web 7.html"><img src="./image/web 6.png" width="350px"></a><br>
+                    <a href="./task/web 7.html"><img src="./image/web6-hover.png" width="350px"></a>
+            </div>
+            <div class="web6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+                    molestias accusamus, quam incidunt, eius expedita culpa<br>
+                    veritatis alias qui doloremque ipsum aperiam?.
+                </p>
+                <a href="./task/try penjualan tiket pesawat.html"><img src="./task/Screenshot 2023-10-25 215130.png" width="350px"></a><br>
+            </div>
+        </div>   
+    </section>
+<br>
+<br>
+
+
+    <section id="project">
+        <div class="textmyproject">
+            <h1>🎮 My Project</h1>
+        <hr>
+             </div>
+             <div class="allproject">
+                <div class="row1">
+        <div class="naruto">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Voluptas fugiat vel est? Cumque facere officia vero molestiae<br>
+                molestias accusamus, quam incidunt, eius expedita culpa<br>
+                veritatis alias qui doloremque ipsum aperiam?.
+            </p>
+            <img src="./image/Screenshot 2023-11-29 234139.png" width="350px"><br>
+            <a href="./main-naruto/html/index2.html">View</a>
+        </div>
+                </div>
+                <br>
+                <br>
+               
+
+
+                <section id="contact">
+                    <div class="textcontact">
+                        <h1>✉️ Contact Me</h1>
+                        <hr>
+                        </div>
+
+
+<section class="contact" id="contact">
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./image/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+                       <h2>Contact info</h2><h3></h3>
+                        <div class="allc">
+                    <div class="tlp-s">
+                    <div  class="tlp">
+                        <div>
+                        <img class="awal" src="./image/call.png" width="30px"><p class="nomor">+62 882 2281 3236</p><br>
+                        </div>
+                        <div>
+                        <img class="akhir"  src="./image/email.png" width="30px"><p class="email">yenifaturohmah2@gmail.com</p>
+                        </div>
+                
+                      <div class="sosmed2">         
+                <div>
+                <a href="https://instagram.com/shioya.yy?igshid=NzZlODBkYWE4Ng==">
+                    <img src="./image/Screenshot_2023-11-12_190659-removebg-preview.png" width="40px"></a> 
+                    </div>            
+                    <div>    
+                <a href="https://www.facebook.com/profile.php?id=100040692699916&mibextid=2JQ9oc">
+                    <img src="./image/Screenshot_2023-11-12_190627-removebg-preview.png" width="40px"></a>
+                    </div>
+                    <div>
+                <a href="https://www.tiktok.com/@yeyenskapecellele?_t=8hIYDInddEg&_r=1">
+                    <img src="./image/Screenshot_2023-11-12_190716-removebg-preview.png" width="40px"></a>
+                    </div>
+                    <div>
+                <a href="index.html">
+                    <img src="./image/Screenshot_2023-12-09_014449-removebg-preview.png" width="40px"></a>
+                    </div>
+                    <div>
+                <a href="index.html">
+                    <img src="./image/Screenshot_2023-12-09_014523-removebg-preview.png" width="40px"></a>
+                    </div>     
+                    </div>
+                </div>
+                
+
+ 
+
+
+               <div class="contact">
+                <a href="./contact/contact_profile.html"><img src="./image/vector-graphics-illustration-euclidean-vector-photography-png-favpng-Udt7dz8aaATsiAwtZeewfkim9-removebg-preview.png" width="100px"></a>
+               </div>
+            </section>
+
+
+
+<center>
+    <a href="emailto: yenifaturohmah2@gmail.com"><p>©yeni faturohmah 2023</p></a>
+</center>
+
+    <!--div all-->
+</div>
+<!--selesai-->
+
+</body>
+</html>

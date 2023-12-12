@@ -1,0 +1,65 @@
+*{
+    margin: 20px;
+}
+
+.all_gambar {
+    background-image:url(download.JPG);
+    align-items: center;
+    height: 300px;
+}
+
+.navv_link a {
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    justify-content: center; background-image: linear-gradient(rgb(172, 165, 165),white, white,rgb(174, 168, 168));
+      height:40px;
+    align-items: center;
+    margin-left: 600px;
+    border-radius: 5px;
+}
+
+.navv_link  li {
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+
+.links a:hover{
+    font-size: 19px;
+    color: green;
+    transition: all 0.4s ease;
+} 
+
+.judul{
+    color: rgb(252, 9, 9);
+    font-size: 20px;
+    
+}
+
+.all_text{
+    display: flex;
+}
+
+.all_text h3{
+    color: red;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.text_gambar{
+    color: red;
+    font-family: fantasy;
+    font-size: large;
+}
+
+.text_gambar2{
+    color:red;
+    font-family:'Franklin Gothic Medium';
+    font-size: 20px;
+}
+.gamabar3{
+    padding-bottom: 10px;
+}
